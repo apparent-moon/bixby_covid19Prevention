@@ -1,0 +1,11 @@
+action (SeoulVaccinationPeopleCount) {
+  type(Search)
+  description (__DESCRIPTION__)
+  collect {
+    input (date) {
+      type (viv.time.Date)
+      min (Optional) max (One)
+    }
+  }
+  output (SeoulPeopleCountResult)
+}

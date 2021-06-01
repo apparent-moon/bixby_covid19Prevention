@@ -1,0 +1,27 @@
+capsule {
+  id (playground.covid19Vaccination)
+  version (0.1.0)
+  format (3)
+  
+  targets {
+    target (bixby-mobile-ko-KR)
+  }
+
+  runtime-version (4)
+
+  capsule-imports{
+    import (viv.time){
+      version (3.5.1)
+    }
+  }
+
+  store-countries {
+    only{
+      allow (KR)
+    }
+  }
+
+  device-models {
+    all
+  }
+}

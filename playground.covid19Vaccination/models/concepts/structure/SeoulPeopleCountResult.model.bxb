@@ -1,0 +1,29 @@
+structure (SeoulPeopleCountResult) {
+  description (__DESCRIPTION__)
+  
+  property (seoulInoculationTarget) {
+    type (SeoulInoculationTarget)
+    min (Optional) max (One)
+  }
+  
+  property (peopleCount_1st){
+    type (PeopleCount_1st)
+    min (Required) max (One)
+  }
+  
+  property (peopleCount_2nd){
+    type (PeopleCount_2nd)
+    min (Required) max (One)
+  }
+  
+  property (peopleCount_1st_Sum){
+    type (PeopleCount_1st_Sum)
+    min (Required) max (One)
+  }
+
+    property (peopleCount_2nd_Sum){
+    type (PeopleCount_2nd_Sum)
+    min (Required) max (One)
+  }
+  
+}
