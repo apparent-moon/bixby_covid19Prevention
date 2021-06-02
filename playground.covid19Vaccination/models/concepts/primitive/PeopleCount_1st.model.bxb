@@ -1,3 +1,3 @@
 integer (PeopleCount_1st) {
-  description (__DESCRIPTION__)
+  description (당일 1차 접종자 수)
 }

@@ -1,0 +1,27 @@
+layout-macro-def (SeoulPeopleCountResult){
+  params{
+    param (seoulPeopleCountResult){
+      type (SeoulPeopleCountResult)
+    }
+  }
+  content{
+    section{
+      content{
+        layout-macro (SeoulInoculationTarget_section){
+          param (seoulPeopleCountResult){
+            expression (seoulPeopleCountResult)
+          }
+        }divider
+        layout-macro (PeopleCount_1st_section){
+          param (seoulPeopleCountResult){
+            expression (seoulPeopleCountResult)
+          }
+        }layout-macro (PeopleCount_2nd_section){
+          param (seoulPeopleCountResult){
+            expression (seoulPeopleCountResult)
+          }
+        }
+      }
+    }
+  }
+}

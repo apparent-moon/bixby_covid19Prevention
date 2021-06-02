@@ -57,6 +57,8 @@ module.exports.function = function SeoulVaccinationPeopleCount(date) {
 
   const response = http.getUrl(url, { format: 'json' });
 
+  target = response.tvCorona19VaccinestatNew.row[0].FIR_SUB.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") //숫자에 ,를 넣는것. 이렇게 해서 넣으려면 primitive 타입을 text로 변경 해줘야 합니다. 현재는 integer라서 들어가지않음!
+
   return {
     seoulInoculationTarget: response.tvCorona19VaccinestatNew.row[0].FIR_SUB,
     peopleCount_1st: response.tvCorona19VaccinestatNew.row[0].FIR_INC1,

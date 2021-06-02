@@ -1,3 +1,3 @@
 integer (PeopleCount_2nd_Sum) {
-  description (__DESCRIPTION__)
+  description (2차접종 누계)
 }

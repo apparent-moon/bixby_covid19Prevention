@@ -1,0 +1,6 @@
+dialog (Result) {
+  match: SeoulPeopleCountResult (this){
+    from-output : SeoulVaccinationPeopleCount(result)
+  }
+  template("서울시 코로나19백신 예방접종 현황을 알려줄게요")
+}

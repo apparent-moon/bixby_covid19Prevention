@@ -3,7 +3,7 @@ structure (SeoulPeopleCountResult) {
   
   property (seoulInoculationTarget) {
     type (SeoulInoculationTarget)
-    min (Optional) max (One)
+    min (Required) max (One)
   }
   
   property (peopleCount_1st){
