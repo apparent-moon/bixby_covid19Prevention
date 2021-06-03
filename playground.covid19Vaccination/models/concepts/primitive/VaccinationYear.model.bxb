@@ -1,0 +1,3 @@
+integer (VaccinationYear) {
+  description (__DESCRIPTION__)
+}

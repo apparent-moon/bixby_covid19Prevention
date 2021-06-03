@@ -1,5 +1,10 @@
 structure (SeoulPeopleCountResult) {
   description (__DESCRIPTION__)
+
+  property (vaccinationDate){
+    type (VaccinationDate)
+    min (Required) max (One)
+  }
   
   property (seoulInoculationTarget) {
     type (SeoulInoculationTarget)

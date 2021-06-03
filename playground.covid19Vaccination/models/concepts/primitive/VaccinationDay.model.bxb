@@ -1,0 +1,3 @@
+integer (VaccinationDay) {
+  description (__DESCRIPTION__)
+}

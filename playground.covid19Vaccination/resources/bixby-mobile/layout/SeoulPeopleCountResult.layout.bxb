@@ -7,7 +7,11 @@ layout-macro-def (SeoulPeopleCountResult){
   content{
     section{
       content{
-        layout-macro (SeoulInoculationTarget_section){
+        layout-macro (Date_section){
+          param (seoulPeopleCountResult){
+            expression (seoulPeopleCountResult)
+          }
+        }layout-macro (SeoulInoculationTarget_section){
           param (seoulPeopleCountResult){
             expression (seoulPeopleCountResult)
           }
