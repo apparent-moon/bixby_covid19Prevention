@@ -30,5 +30,10 @@ structure (SeoulPeopleCountResult) {
     type (PeopleCount_2nd_Sum)
     min (Required) max (One)
   }
+
+  property (apiUpdate){
+    type (API_Update)
+    min (Required) max (One)
+  }
   
 }
