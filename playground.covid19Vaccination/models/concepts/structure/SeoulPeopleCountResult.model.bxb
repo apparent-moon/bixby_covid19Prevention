@@ -35,5 +35,10 @@ structure (SeoulPeopleCountResult) {
     type (API_Update)
     min (Required) max (One)
   }
+
+  property (falseDate){
+    type (FalseDate)
+    min (Required) max (One)    
+  }
   
 }

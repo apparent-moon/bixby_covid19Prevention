@@ -5,7 +5,7 @@ dialog (Result) {
   
   if(result.apiUpdate){ //true
     if (exists(this.date)){
-      if(this.date.month != result.vaccinationDate.vaccinationMonth && this.date.day != result.vaccinationDate.vaccinationDay){
+      if(result.falseDate){
         template("어제 서울시 코로나19 백신 예방접종 현황이에요"){
           speech ("그 날짜는 지원하지 않아요. 대신 어제 현황을 보여줄게요.")
         }
@@ -17,7 +17,7 @@ dialog (Result) {
     }
   }else{ //false
     if (exists(this.date)){
-      if(this.date.month != result.vaccinationDate.vaccinationMonth && this.date.day != result.vaccinationDate.vaccinationDay || this.date.month == result.vaccinationDate.vaccinationMonth && this.date.day > result.vaccinationDate.vaccinationDay || this.date.year < result.vaccinationDate.vaccinationYear || this.date.year > result.vaccinationDate.vaccinationYear){
+      if(result.falseDate){
         template("최근에 업데이트 된 서울시 코로나19 백신 예방접종 현황이에요"){
           speech ("그 날짜는 지원하지 않아요. 대신 최신 현황을 보여줄게요.")
         }
