@@ -1,0 +1,44 @@
+structure (SeoulPeopleCountResult) {
+  description (__DESCRIPTION__)
+
+  property (vaccinationDate){
+    type (VaccinationDate)
+    min (Required) max (One)
+  }
+  
+  property (seoulInoculationTarget) {
+    type (SeoulInoculationTarget)
+    min (Required) max (One)
+  }
+  
+  property (peopleCount_1st){
+    type (PeopleCount_1st)
+    min (Required) max (One)
+  }
+  
+  property (peopleCount_2nd){
+    type (PeopleCount_2nd)
+    min (Required) max (One)
+  }
+  
+  property (peopleCount_1st_Sum){
+    type (PeopleCount_1st_Sum)
+    min (Required) max (One)
+  }
+
+    property (peopleCount_2nd_Sum){
+    type (PeopleCount_2nd_Sum)
+    min (Required) max (One)
+  }
+
+  property (apiUpdate){
+    type (API_Update)
+    min (Required) max (One)
+  }
+
+  property (falseDate){
+    type (FalseDate)
+    min (Required) max (One)    
+  }
+  
+}

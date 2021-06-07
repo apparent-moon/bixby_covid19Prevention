@@ -1,0 +1,3 @@
+integer (PeopleCount_1st_Sum) {
+  description (1차접종 누계)
+}

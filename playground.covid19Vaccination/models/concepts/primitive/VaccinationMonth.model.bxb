@@ -1,0 +1,3 @@
+integer (VaccinationMonth) {
+  description (API 에서 return 한 백신 접종 월)
+}

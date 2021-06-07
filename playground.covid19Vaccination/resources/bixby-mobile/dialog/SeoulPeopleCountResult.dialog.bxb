@@ -1,0 +1,31 @@
+dialog (Result) {
+  match: SeoulPeopleCountResult (result){
+    from-output : SeoulVaccinationPeopleCount(this)
+  }
+  
+  if(result.apiUpdate){ //true
+    if (exists(this.date)){
+      if(result.falseDate){
+        template("어제 서울시 코로나19 백신 예방접종 현황이에요"){
+          speech ("그 날짜는 지원하지 않아요. 대신 어제 현황을 보여줄게요.")
+        }
+      }else{
+        template("#{value(result.vaccinationDate.vaccinationMonth)}월 #{value(result.vaccinationDate.vaccinationDay)}일 서울시 코로나19 백신 예방접종 현황이에요")
+      }
+    }else{
+      template("어제 서울시 코로나19 백신 예방접종 현황이에요")
+    }
+  }else{ //false
+    if (exists(this.date)){
+      if(result.falseDate){
+        template("최근에 업데이트 된 서울시 코로나19 백신 예방접종 현황이에요"){
+          speech ("그 날짜는 지원하지 않아요. 대신 최신 현황을 보여줄게요.")
+        }
+      }else{
+        template("#{value(result.vaccinationDate.vaccinationMonth)}월 #{value(result.vaccinationDate.vaccinationDay)}일 서울시 코로나19 백신 예방접종 현황이에요")
+      }
+    }else{
+      template("최근에 업데이트 된 서울시 코로나19 백신 예방접종 현황이에요")
+    }
+  }
+}

@@ -1,0 +1,24 @@
+layout-macro-def (Date_section){
+  params{
+    param (seoulPeopleCountResult){
+      type (SeoulPeopleCountResult)
+      min (Required) max (One)
+    }
+  }
+  
+  content{
+    title-card{
+      title-area{
+        halign (Center)
+        slot1{
+          paragraph{
+            style(Title_M)
+            value{
+              template ("#{value(seoulPeopleCountResult.vaccinationDate.vaccinationYear)}년 #{value(seoulPeopleCountResult.vaccinationDate.vaccinationMonth)}월 #{value(seoulPeopleCountResult.vaccinationDate.vaccinationDay)}일")
+            }
+          }
+        }
+      }
+    }
+  }
+}

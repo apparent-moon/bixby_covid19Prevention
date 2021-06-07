@@ -1,0 +1,3 @@
+integer (SeoulInoculationTarget) {
+  description (접종대상자)
+}

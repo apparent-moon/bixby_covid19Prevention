@@ -1,0 +1,13 @@
+result-view{
+  match: SeoulPeopleCountResult (this){
+    from-output : SeoulVaccinationPeopleCount(result)
+  }
+
+  render{
+    layout-macro (SeoulPeopleCountResult){
+      param (seoulPeopleCountResult){
+        expression (this)
+      }
+    }
+  }
+}

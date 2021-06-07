@@ -1,0 +1,5 @@
+train (t-xxyetb3p7kuyj099ih4lqrhi4) {
+  utterance ([g:SeoulVaccinationPeopleCount] 예방접종자 수 보여줘)
+  plan (Y2BiMCnISaxML8ovzUvRS84vy0wxtAxLTE7OzEssyczP0wtOzS/NCUjNL8hJdQaqKQlKLS7NKWGwJEIXkgCSAQyMQMgAxUASAA==)
+  last-modified (1622558444393)
+}

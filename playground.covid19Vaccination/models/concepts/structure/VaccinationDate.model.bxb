@@ -1,0 +1,16 @@
+structure (VaccinationDate) {
+  description (__DESCRIPTION__)
+
+  property (vaccinationYear){
+    type (VaccinationYear)
+  }
+
+  property (vaccinationMonth){
+    type (VaccinationMonth)
+  }
+
+  property (vaccinationDay){
+    type (VaccinationDay)
+  }
+
+}

@@ -1,0 +1,30 @@
+layout-macro-def (PeopleCount_1st_section){
+  params{
+    param (seoulPeopleCountResult){
+      type (SeoulPeopleCountResult)
+      min (Required) max (One)
+    }
+  }
+  content{
+    cell-area{
+      slot2{
+        content{
+          order (SecondaryPrimary)
+          secondary{
+            template ("1차 접종자 수")
+          }
+          primary{
+            template ("#{value(seoulPeopleCountResult.peopleCount_1st)} 명")
+          }
+        }
+      }slot3{
+        label{
+          valign (Bottom)
+          value{
+            template ("누계 : #{value(seoulPeopleCountResult.peopleCount_1st_Sum)} 명")
+          }
+        }
+      }
+    }
+  }
+}

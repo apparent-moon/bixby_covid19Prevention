@@ -1,0 +1,3 @@
+integer (VaccinationYear) {
+  description (API 에서 return 한 백신 접종 연도)
+}

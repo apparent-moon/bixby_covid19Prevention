@@ -1,0 +1,3 @@
+boolean (FalseDate) {
+  description (사용자가 지원하지 않은 값에 대해서 발화했는지에 대한 여부)
+}

@@ -1,0 +1,10 @@
+train (t-oiwrbijpj3ln0zmnj894m21bg) {
+  utterance ("[g:SeoulVaccinationPeopleCount] (2021년 4월 1일)[v:viv.time.Date] 예방접종자 수 보여줘")
+  plan (Y2BmMCnISaxML8ovzUvRS84vy0wxtAxLTE7OzEssyczP0wtOzS/NCUjNL8hJdQaqKQlKLS7NKWGwJEIXkgCSAQy8ZZlleiWZual6LoklqQxMDIxAzAAkGRlAAMoHAA==)
+  last-modified (1622639517627)
+}
+train (t-oqgty004lprc8fygc1kivr1l1) {
+  utterance ("[g:SeoulVaccinationPeopleCount] (5월 10일)[v:viv.time.Date] 예방접종자 수 보여줘")
+  plan (Y2BmMCnISaxML8ovzUvRS84vy0wxtAxLTE7OzEssyczP0wtOzS/NCUjNL8hJdQaqKQlKLS7NKWGwJEIXkgCSAQy8ZZlleiWZual6LoklqQxMDIxAzAAkGRlAAMoHAA==)
+  last-modified (1622638477842)
+}

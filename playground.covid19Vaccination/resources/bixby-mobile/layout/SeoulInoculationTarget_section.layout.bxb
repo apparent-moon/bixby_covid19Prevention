@@ -1,0 +1,33 @@
+layout-macro-def (SeoulInoculationTarget_section){
+  params{
+    param (seoulPeopleCountResult){
+      type (SeoulPeopleCountResult)
+      min (Required) max (One)
+    }
+  }
+  
+  content{
+    title-card{
+      title-area{
+        halign (Center)
+        slot1{
+          paragraph{
+            style(Title_M)
+            value{
+              template ("서울 접종대상자 수")
+            }
+          }
+        }slot2{
+          paragraph{
+            style(Title_S)
+            value{
+              if(exists(seoulPeopleCountResult.seoulInoculationTarget)){
+              template ("#{value(seoulPeopleCountResult.seoulInoculationTarget)} 명")
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
