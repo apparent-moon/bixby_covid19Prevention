@@ -1,0 +1,5 @@
+train (t-r0pgq2kgz2y5qd4ojmg673zqd) {
+  utterance ("[g:SeoulVaccinationPeopleCount] (오늘)[v:viv.time.Date] 예방접종자 수 보여줘")
+  plan (Y2BmMCnISaxML8ovzUvRS84vy0wxtAxLTE7OzEssyczP0wtOzS/NCUjNL8hJdQaqKQlKLS7NKWGwJEIXkgCSAQy8ZZlleiWZual6LoklqQxMDIxAzAAkGRlAAMoHAA==)
+  last-modified (1623333183128)
+}
