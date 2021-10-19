@@ -7,11 +7,11 @@ capsule {
     target (bixby-mobile-ko-KR)
   }
 
-  runtime-version (4)
+  runtime-version (9)
 
   capsule-imports{
     import (viv.time){
-      version (3.5.1)
+      version (3.6.1)
     }
   }
 
